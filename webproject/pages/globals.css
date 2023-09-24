@@ -8,6 +8,13 @@
         @apply w-screen h-screen;
     }
     .button{
-        @apply bg-Verde border-Negro border-2 text-Negro font-chivo font-medium text-lg p-3 w-fit;
+        @apply bg-Verde border-Negro border-2 text-Negro font-chivo font-medium text-lg p-4 w-fit;
+    }
+    .promptInput{
+        @apply bg-Gris-Claro border-Negro border-2 text-Negro placeholder:text-Gris-Oscuro w-96 p-4 h-10 outline-none focus:border-Gris-Oscuro;
+    }
+
+    .AskButton{
+        @apply bg-Verde w-10 h-10 border-Negro border-t-2 border-b-2 border-r-2 border-l-0; 
     }
 }

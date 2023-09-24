@@ -2,6 +2,9 @@ import Head from "next/head";
 import { useState } from "react";
 import Header from "./components/Header";
 import Link from "next/link";
+import Prueba from "../Assets/dudasImage.png"
+import Footer from "./components/Footer";
+import Image from "next/image";
 
 export default function Home() {
   const [questionInput, setquestionInput] = useState("");
@@ -53,13 +56,20 @@ export default function Home() {
           <input type="submit" value="Respuesta" />
         </form>
         <div>{result}</div>
-        <div className="section flex flex-wrap px-8 items-center">
-          <setion className="w-1/2 flex flex-col gap-10">
+        <div className="section flex flex-wrap px-28 items-center">
+
+        </div>
+        <div className="section flex flex-wrap px-28 items-center">
+          <section className="w-1/2 flex flex-col gap-10">
             <h4 className="font-chivo font-bold italic text-3xl ">¿Tienes Dudas?</h4>
             <h4 className="font-chivo font-bold italic text-5xl ">Vive la experiencia y ve lo que puedes lograr</h4>
             <Link href="/TestBot" className="button">Iniciar Prueba</Link>
-          </setion>
+          </section>
+          <section className="w-1/2 flex flex-col gap-10 items-end">
+            <Image src={Prueba} alt="Fink Logo" className="object-containt min-h-[12vh] w-52"/>
+          </section>
         </div>
+        <Footer/>
       </main>
     </div>
   );
