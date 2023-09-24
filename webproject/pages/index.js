@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import Header from "./components/Header";
+import Link from "next/link";
 
 export default function Home() {
   const [questionInput, setquestionInput] = useState("");
@@ -52,6 +53,13 @@ export default function Home() {
           <input type="submit" value="Respuesta" />
         </form>
         <div>{result}</div>
+        <div className="section flex flex-wrap px-8 items-center">
+          <setion className="w-1/2 flex flex-col gap-10">
+            <h4 className="font-chivo font-bold italic text-3xl ">¿Tienes Dudas?</h4>
+            <h4 className="font-chivo font-bold italic text-5xl ">Vive la experiencia y ve lo que puedes lograr</h4>
+            <Link href="/TestBot" className="button">Iniciar Prueba</Link>
+          </setion>
+        </div>
       </main>
     </div>
   );

@@ -9,7 +9,18 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    colors:{
+      "Negro": '#1F1F1F',
+      "Verde": "#9CFFDB",
+      "Gris": "#E3E3E3",
+      "Gris-Claro": '#F9F9F9',
+      "Verde-Clarito": '#E9FFF7'
+    },
+    extend: {
+      fontFamily:{
+        'chivo':['Chivo+Mono']
+      }
+    },
   },
   plugins: [],
 }
