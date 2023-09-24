@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import styles from "./index.module.css";
+import Header from "./components/Header";
 
 export default function Home() {
   const [questionInput, setquestionInput] = useState("");
@@ -38,8 +38,8 @@ export default function Home() {
         <link rel="icon" href="/money.webp" />
       </Head>
 
-      <main className={styles.main}>
-        <img src="/money.webp" className={styles.icon} />
+      <main>
+        <Header/>
         <h3>Preguntame lo que sea</h3>
         <form onSubmit={onSubmit}>
           <input
@@ -51,7 +51,7 @@ export default function Home() {
           />
           <input type="submit" value="Respuesta" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <div>{result}</div>
       </main>
     </div>
   );
