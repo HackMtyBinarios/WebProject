@@ -48,7 +48,14 @@ function TestBot() {
                                 onChange={(e) => setquestionInput(e.target.value)}
                                 className='promptInput'
                             />
-                            <input type="submit" value="" className='AskButton'/>
+                                <button type="submit" value="" className='AskButton'>
+                                    <span className='flex items-center w-1/2 h-1/2'>
+                                        <svg height="29" width="27" fill="none" viewBox="0 0 27 29" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.779 11.921 2.121 26.578" stroke="#000" strokeWidth="6"/>
+                                            <circle cx="15.428" cy="12.114" fill="#fff" r="9.571" stroke="#000" strokeWidth="4"/>
+                                        </svg>
+                                    </span>
+                                </button>
                         </form>
                     </section>
                 </section>

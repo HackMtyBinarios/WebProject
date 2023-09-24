@@ -15,6 +15,6 @@
     }
 
     .AskButton{
-        @apply bg-Verde w-10 h-10 border-Negro border-t-2 border-b-2 border-r-2 border-l-0; 
+        @apply bg-Verde w-10 h-10 border-Negro border-t-2 border-b-2 border-r-2 border-l-0 flex items-center justify-center; 
     }
 }
