@@ -17,4 +17,8 @@
     .AskButton{
         @apply bg-Verde w-14 h-14 border-Negro border-t-2 border-b-2 border-r-2 border-l-0 flex items-center justify-center; 
     }
+
+    .ListOption{
+        @apply text-Negro font-chivo italic font-medium text-sm ;
+    }
 }
