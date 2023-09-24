@@ -36,9 +36,14 @@ function TestBot() {
         <>
             <HeaderTest/>
             <section className='w-screen h-[88vh] flex justify-center'>
-                <section className='w-[50vw] flex justify-center'>
-                    <section className='flex flex-col self-end mb-12'>
-                        <div className="w-200px h-52 bg-Verde-Clarito text-Negro p-5 break-all font-chivo font-regular text-sm">{result}</div>
+                <section className='w-[50vw] h-full flex justify-center'>
+                    <section className='h-full flex flex-col justify-end py-12 gap-10'>
+                        <section>
+
+                        </section>
+                        <div className="w-full bg-Verde-Clarito">
+                            <p className='w-[424px] text-Negro p-5 whitespace-pre-line break-words font-chivo font-regular text-sm'>{result}</p>
+                        </div>
                         <form onSubmit={onSubmit} className='flex items-center justify-center'>
                             <input
                                 type="text"
@@ -46,6 +51,7 @@ function TestBot() {
                                 placeholder="¿Con que te puedo ayudar el día de hoy?"
                                 value={questionInput}
                                 onChange={(e) => setquestionInput(e.target.value)}
+                                autocomplete="off"
                                 className='promptInput'
                             />
                                 <button type="submit" value="" className='AskButton'>
