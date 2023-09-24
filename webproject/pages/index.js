@@ -85,10 +85,6 @@ export default function Home() {
             <Image src={graph} alt="graphs" className="object-containt min-h-50 w-[400px]"/>
           </section>
         </div>
-
-        <div className="section flex flex-wrap px-28 items-center">
-
-        </div>
         <div className="section flex flex-wrap px-28 items-center">
           <section className="w-1/2 flex flex-col gap-10">
             <h4 className="font-chivo font-bold italic text-3xl ">¿Tienes Dudas?</h4>
